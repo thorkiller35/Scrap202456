@@ -142,7 +142,7 @@ public class SwerveSubsystem extends SubsystemBase
                                                           0,
                                                           0),
                                          // Rotation PID constants
-                                         4,
+                                         10,
                                          // Max module speed, in m/s
                                          0.627,
                                          // Drive base radius in meters. Distance from robot center to furthest module.

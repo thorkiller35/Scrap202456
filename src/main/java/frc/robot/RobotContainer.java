@@ -191,10 +191,11 @@ public class RobotContainer
         NamedCommands.registerCommand("pullbacko", projectilesub.Outtake(-1));
         
 
-    NamedCommands.registerCommand("runintake2", newintake.intakeandfeederauto(0.8,-0.80,2));
+    NamedCommands.registerCommand("runintake2", newintake.intakeandfeederauto(0.8,-0.80,.5));
     NamedCommands.registerCommand("boxpivclose",boxpivsub.boxpivcmdAU(-8.04736328125));
-    NamedCommands.registerCommand("boxpivfar",boxpivsub.boxpivcmdAU1(-6.8));
-    NamedCommands.registerCommand("shoot",projectilesub.OtakeAU(.60));
+    NamedCommands.registerCommand("boxpivfar",boxpivsub.boxpivcmdAU1(-4.2));
+    NamedCommands.registerCommand("boxpivfar1",boxpivsub.boxpivcmdAU1(-4.0));
+    NamedCommands.registerCommand("shoot",projectilesub.OtakeAU(.7));
 
     
     //Make Multiple of the below shoot speakers because you need to manually find the setpoints and speed for each angle
@@ -203,6 +204,7 @@ public class RobotContainer
     autoChooser.setDefaultOption("hi", new SequentialCommandGroup());
    
         autoChooser.addOption("2 piece stage ", new PathPlannerAuto("2 Piece Stage"));
+        autoChooser.addOption("3 Piece AMP Side", new PathPlannerAuto("3 Piece AMP Side"));
             autoChooser.addOption("2 piece amp", new PathPlannerAuto("Ashrith"));
              autoChooser.addOption("2 piece center", new PathPlannerAuto("Copy of 2 Piece Center Real hi"));
              autoChooser.addOption("Bazinga!", new SequentialCommandGroup(new PathPlannerAuto("Copy of 3 Piece PT1"),new PathPlannerAuto("3 Piece PT2"),new PathPlannerAuto("3 Piece PT3")));

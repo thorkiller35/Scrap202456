@@ -247,7 +247,7 @@ public Command ProjectilesUnjam(double speed){
     
             @Override
             public boolean isFinished() {
-                return AutoTimer2.get() > 2; // Check if the setpoint is reached
+                return AutoTimer2.get() > 1; // Check if the setpoint is reached
             }
         };}
 }
