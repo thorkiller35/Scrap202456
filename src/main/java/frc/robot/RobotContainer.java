@@ -195,6 +195,7 @@ public class RobotContainer
     NamedCommands.registerCommand("boxpivclose",boxpivsub.boxpivcmdAU(-8.04736328125));
     NamedCommands.registerCommand("boxpivfar",boxpivsub.boxpivcmdAU1(-4.2));
     NamedCommands.registerCommand("boxpivfar1",boxpivsub.boxpivcmdAU1(-4.0));
+    NamedCommands.registerCommand("boxpivfar2",boxpivsub.boxpivcmdAU1(-6.0));
     NamedCommands.registerCommand("shoot",projectilesub.OtakeAU(.7));
 
     
@@ -205,6 +206,7 @@ public class RobotContainer
    
         autoChooser.addOption("2 piece stage ", new PathPlannerAuto("2 Piece Stage"));
         autoChooser.addOption("3 Piece AMP Side", new PathPlannerAuto("3 Piece AMP Side"));
+        autoChooser.addOption("3 Piece Stage Side", new PathPlannerAuto("Copy of 3 Piece AMP Side"));
             autoChooser.addOption("2 piece amp", new PathPlannerAuto("Ashrith"));
              autoChooser.addOption("2 piece center", new PathPlannerAuto("Copy of 2 Piece Center Real hi"));
              autoChooser.addOption("Bazinga!", new SequentialCommandGroup(new PathPlannerAuto("Copy of 3 Piece PT1"),new PathPlannerAuto("3 Piece PT2"),new PathPlannerAuto("3 Piece PT3")));
